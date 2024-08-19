@@ -1,0 +1,1 @@
+cc -Wall -Wextra -Werror main.c rush00.c ft_putchar.c -o teste
