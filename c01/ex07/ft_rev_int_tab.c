@@ -6,7 +6,7 @@
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 18:43:10 by bportell          #+#    #+#             */
-/*   Updated: 2024/08/25 20:01:38 by bportell         ###   ########.fr       */
+/*   Updated: 2024/08/27 16:55:23 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ void	ft_rev_int_tab(int *tab, int size)
 		tab[j] = temporary;
 	}
 }
-/*int	main(void)
+/*
+int	main(void)
 {
 	int	tab[5] = {1, 2, 3, 4, 5};
 	int	size;
