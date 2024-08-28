@@ -6,7 +6,7 @@
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 18:43:10 by bportell          #+#    #+#             */
-/*   Updated: 2024/08/25 21:48:44 by bportell         ###   ########.fr       */
+/*   Updated: 2024/08/28 18:09:26 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ void	ft_sort_int_tab(int *tab, int size)
 		{
 			if(tab[j] < tab[min_idx])
 				min_idx = j;
-			if(min_idx != i)
-				swap(&tab[min_idx], &tab[i]);
 			j++;
 		}
+		if(min_idx != i)
+			swap(&tab[min_idx], &tab[i]);
 	}
 }
 
