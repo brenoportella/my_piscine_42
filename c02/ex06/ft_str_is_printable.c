@@ -1,6 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/01 12:46:01 by bportell          #+#    #+#             */
+/*   Updated: 2024/09/01 16:45:10 by bportell         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
 
 int	ft_str_is_printable(char *str);
 
@@ -11,7 +22,7 @@ int	ft_str_is_printable(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] <= 32 || str[i] >= 126)
+		if (str[i] < 32 || str[i] > 126)
 			return (0);
 		i++;
 	}
@@ -20,7 +31,7 @@ int	ft_str_is_printable(char *str)
 /*
 int	main(void)
 {
-	char	str_test [] = "breno gg";
+	char	str_test [] = "";
 	int	result;
 
 	result = ft_str_is_printable(str_test);

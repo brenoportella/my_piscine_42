@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/01 12:40:16 by bportell          #+#    #+#             */
-/*   Updated: 2024/09/01 16:50:54 by bportell         ###   ########.fr       */
+/*   Created: 2024/08/28 13:59:05 by bportell          #+#    #+#             */
+/*   Updated: 2024/09/01 15:53:52 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
+char	*ft_strcpy(char *dest, char *src);
 
-char	*ft_strlowcase(char *str);
-
-char	*ft_strlowcase(char *str)
+char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 65 && str[i] <= 90)
-			str[i] = str[i]+32;
-		i++;
-	}
-	return (str);
+	i = -1;
+	while (src[++i] != '\0')
+		dest[i] = src[i];
+	dest[i] = '\0';
+	return (dest);
 }
 /*
 int	main(void)
 {
-	char	str_upper [] = "bREno gg";
+	char	src [] = "breno portella";
+	char	dest[sizeof(src)];
 
-	ft_strlowcase(str_upper);
-
-	printf("%s\n", str_upper);
+	ft_strcpy(dest, src);
+	printf("%s\n", dest);
+	return 0;
 }*/

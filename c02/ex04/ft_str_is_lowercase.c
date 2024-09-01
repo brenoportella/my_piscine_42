@@ -1,39 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/01 12:40:16 by bportell          #+#    #+#             */
-/*   Updated: 2024/09/01 16:50:54 by bportell         ###   ########.fr       */
+/*   Created: 2024/08/28 15:38:44 by bportell          #+#    #+#             */
+/*   Updated: 2024/09/01 16:12:11 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
+int	ft_str_is_lowercase(char *str);
 
-char	*ft_strlowcase(char *str);
-
-char	*ft_strlowcase(char *str)
+int	ft_str_is_lowercase(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 65 && str[i] <= 90)
-			str[i] = str[i]+32;
+		if (!(str[i] >= 'a' && str[i] <= 'z'))
+			return (0);
 		i++;
 	}
-	return (str);
+	return (1);
 }
 /*
 int	main(void)
 {
-	char	str_upper [] = "bREno gg";
+	char	str [] = "";
+	int	result;
 
-	ft_strlowcase(str_upper);
+	result = ft_str_is_lowercase(str);
+	printf("%i\n", result);
 
-	printf("%s\n", str_upper);
 }*/
