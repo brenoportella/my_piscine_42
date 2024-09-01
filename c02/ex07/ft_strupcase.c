@@ -6,7 +6,7 @@
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 12:45:17 by bportell          #+#    #+#             */
-/*   Updated: 2024/09/01 16:46:08 by bportell         ###   ########.fr       */
+/*   Updated: 2024/09/01 22:14:47 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strupcase(char *str)
 	while (str[i] != '\0')
 	{
 		if (str[i] >= 97 && str[i] <= 126)
-			str[i] = str[i]-32;
+			str[i] = str[i] - 32;
 		i++;
 	}
 	return (str);
