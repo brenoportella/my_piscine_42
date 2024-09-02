@@ -1,5 +1,5 @@
 
-#include <stdio.h>
+//#include <stdio.h>
 
 int	ft_recursive_factorial(int nb)
 {
@@ -9,8 +9,8 @@ int	ft_recursive_factorial(int nb)
 		return (1);
 	return (nb * ft_recursive_factorial(nb - 1));
 }
-
+/*
 int	main(void)
 {
 	printf("the recursive factorial is: %d\n", ft_recursive_factorial(9));
-}
+}*/
