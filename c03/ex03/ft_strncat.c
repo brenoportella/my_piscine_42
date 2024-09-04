@@ -1,6 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/02 23:50:45 by bportell          #+#    #+#             */
+/*   Updated: 2024/09/04 00:05:29 by bportell         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
+#include <stdio.h>
+#include <string.h>
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
@@ -25,6 +36,6 @@ int	main(void)
 	char	str1[20] = "breno ";
 	char	str2[] = "gg";
 
-	printf("%s\n", ft_strncat(str1, str2, 1));
+	printf("%s\n", ft_strncat(str1, str2, 100));
 	return (0);
 }*/

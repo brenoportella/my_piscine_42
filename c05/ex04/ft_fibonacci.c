@@ -1,37 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/28 15:38:44 by bportell          #+#    #+#             */
-/*   Updated: 2024/09/02 20:58:13 by bportell         ###   ########.fr       */
+/*   Created: 2024/09/04 10:07:24 by bportell          #+#    #+#             */
+/*   Updated: 2024/09/04 10:15:52 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_uppercase(char *str);
-
-int	ft_str_is_uppercase(char *str)
+int	ft_fibonacci(int index)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (!(str[i] >= 'A' && str[i] <= 'Z'))
-			return (0);
-		i++;
-	}
-	return (1);
+	if (index <= 0)
+		return (0);
+	if (index == 1 || index == 2)
+		return (1);
+	if (index == 3)
+		return (2);
+	return (ft_fibonacci(index - 2) + ft_fibonacci(index - 1));
 }
 /*
+#include <stdio.h>
 int	main(void)
 {
-	char	str [] = "AAAAAAA";
-	int	result;
-
-	result = ft_str_is_uppercase(str);
-	printf("%i\n", result);
-
+	printf("fibonacci 14: %d", ft_fibonacci(5));
 }*/

@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/02 19:28:04 by bportell          #+#    #+#             */
+/*   Updated: 2024/09/04 03:42:03 by bportell         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <unistd.h>
 
@@ -49,7 +60,14 @@ void	ft_putnbr_base(int nbr, char *base)
 	nb = nbr;
 	base_len = ft_strlen(base);
 	if (!base_verify(base) || base_len <= 1)
-		return;
+		return ;
+	if (nbr == -2147483648)
+	{
+		ft_putchar('-');
+		ft_putnbr_base(-(nbr / base_len), base);
+		ft_putchar(base[-(nbr % base_len)]);
+		return ;
+	}
 	if (nb < 0)
 	{
 		ft_putchar('-');
@@ -65,7 +83,7 @@ int	main(void)
 	char	*base;
 
 	base = "01";
-	ft_putnbr_base(-2147483646, base);
+	ft_putnbr_base(-2147483648, base);
 	ft_putchar ('\n');
 	return (0);
 }*/

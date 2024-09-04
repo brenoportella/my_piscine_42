@@ -6,7 +6,7 @@
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 20:08:04 by bportell          #+#    #+#             */
-/*   Updated: 2024/09/01 22:12:03 by bportell         ###   ########.fr       */
+/*   Updated: 2024/09/03 17:27:21 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,6 @@ char	*ft_strcapitalize(char *str)
 	ft_strlowcase(str);
 	while (i >= 0)
 	{
-		if (str[i] == 0 && ft_alphanumeric(str[i]))
-		{
-			str[i] -= 32;
-		}
 		if (!ft_alphanumeric(str[i - 1]) && str[i] >= 'a' && str[i] <= 'z')
 		{
 			str[i] -= 32;

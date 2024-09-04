@@ -1,6 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/02 19:32:37 by bportell          #+#    #+#             */
+/*   Updated: 2024/09/04 00:06:15 by bportell         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
+#include <stdio.h>
+#include <string.h>
 
 int	ft_strlen(char *str)
 {
@@ -23,7 +34,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	src_size = ft_strlen(src);
 	if (dest_size >= size)
 		return (src_size + size);
-	while (src[i] != '\0' && i < (size -  dest_size - 1))
+	while (src[i] != '\0' && i < (size - dest_size - 1))
 	{
 		dest[dest_size + i] = src[i];
 		i++;

@@ -6,13 +6,13 @@
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/24 23:22:29 by bportell          #+#    #+#             */
-/*   Updated: 2024/08/24 23:29:16 by bportell         ###   ########.fr       */
+/*   Updated: 2024/08/28 12:19:46 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strlen(char *str);
+int	ft_strlen(char *str);
 
-	ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	count;
 

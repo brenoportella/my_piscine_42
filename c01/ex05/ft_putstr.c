@@ -6,21 +6,22 @@
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/24 23:16:46 by bportell          #+#    #+#             */
-/*   Updated: 2024/08/24 23:21:07 by bportell         ###   ########.fr       */
+/*   Updated: 2024/08/28 12:19:13 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putstr(char *str);
 
 void	ft_putstr(char *str)
 {
-	int	i;//index
+	int	i;
 
 	i = 0;
 	while (*str[i] != '\0')
 	{
-		write (1, &str[i], 1)
+		write (1, &str[i], 1);
 		i++;
 	}
 }
