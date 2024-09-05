@@ -6,7 +6,7 @@
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 10:16:29 by bportell          #+#    #+#             */
-/*   Updated: 2024/09/04 11:25:53 by bportell         ###   ########.fr       */
+/*   Updated: 2024/09/05 15:31:27 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	main(void)
 	printf("sqrt 0: %d\n", ft_sqrt(0));
 	printf("sqrt -1: %d\n", ft_sqrt(-1));
 	printf("sqrt 2: %d\n", ft_sqrt(2));
-	printf("sqrt 3: %d\n", ft_sqrt(3));
+	printf("sqrt 1: %d\n", ft_sqrt(1));
 	printf("sqrt 4: %d\n", ft_sqrt(4));
 	printf("sqrt 64: %d\n", ft_sqrt(64));
 }*/

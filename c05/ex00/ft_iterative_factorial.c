@@ -6,11 +6,9 @@
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 11:20:38 by bportell          #+#    #+#             */
-/*   Updated: 2024/09/04 11:20:42 by bportell         ###   ########.fr       */
+/*   Updated: 2024/09/05 15:05:17 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 int	ft_iterative_factorial(int nb)
 {
@@ -29,7 +27,13 @@ int	ft_iterative_factorial(int nb)
 	return (result);
 }
 /*
+#include <stdio.h>
 int	main(void)
 {
-	printf("factorial is: %d\n", ft_iterative_factorial(4));
+	printf("factorial is4: %d\n", ft_iterative_factorial(4));
+	printf("factorial is0: %d\n", ft_iterative_factorial(0));
+	printf("factorial is-2: %d\n", ft_iterative_factorial(-2));
+	printf("factorial is1: %d\n", ft_iterative_factorial(1));
+	printf("factorial is12: %d\n", ft_iterative_factorial(12));
+	printf("factorial is13: %d\n", ft_iterative_factorial(13));
 }*/

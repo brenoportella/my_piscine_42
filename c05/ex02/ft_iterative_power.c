@@ -6,7 +6,7 @@
 /*   By: bportell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 19:31:09 by bportell          #+#    #+#             */
-/*   Updated: 2024/09/04 11:24:03 by bportell         ###   ########.fr       */
+/*   Updated: 2024/09/05 15:18:30 by bportell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,20 @@ int	ft_iterative_power(int nb, int power)
 	return (result);
 }
 /*
+#include <stdio.h>
 int	main(void)
 {
-	printf("the power of number is: %d\n", ft_iterative_power(3, -2));
+	printf("0 ^ 0: %d\n", ft_iterative_power(0, 0));
+	printf("0 ^ 2: %d\n", ft_iterative_power(0, 2));
+	printf("0 ^ -2: %d\n", ft_iterative_power(0, -2));
+	printf("3 ^ -2: %d\n", ft_iterative_power(3, -2));	
+	printf("3 ^ 0: %d\n", ft_iterative_power(3, 0));
+	printf("3 ^ 2: %d\n", ft_iterative_power(3, 2));
+	printf("-3 ^ -2: %d\n", ft_iterative_power(-3, -2));
+	printf("-3 ^ 2: %d\n", ft_iterative_power(-3, 2));
+	printf("-3 ^ 3: %d\n", ft_iterative_power(-3, 3));
+	printf("-3 ^ 1: %d\n", ft_iterative_power(-3, 0));
+	printf("max ^ 1: %d\n", ft_iterative_power(2147483647, 1));
+	printf("min ^ 1: %d\n", ft_iterative_power(-2147483648, 1));
+	printf("3 ^ 10: %d\n", ft_iterative_power(3, 10));
 }*/
